@@ -1,13 +1,13 @@
-package dw.editora.service;
+package dw.editora.service.artigo;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import dw.editora.model.Artigo;
-import dw.editora.model.Autor;
-import dw.editora.repository.ArtigoRepository;
+import dw.editora.model.artigo.Artigo;
+import dw.editora.model.autor.Autor;
+import dw.editora.repository.artigo.ArtigoRepository;
 import jakarta.persistence.EntityManager;
 
 @Service

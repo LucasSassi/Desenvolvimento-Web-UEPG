@@ -1,10 +1,10 @@
-package dw.editora.repository;
+package dw.editora.repository.artigo;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import dw.editora.model.Artigo;
+import dw.editora.model.artigo.Artigo;
 
 public interface ArtigoRepository extends JpaRepository<Artigo, Long> {
 

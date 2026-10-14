@@ -1,4 +1,4 @@
-package dw.editora.control;
+package dw.editora.control.artigo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import dw.editora.model.Artigo;
-import dw.editora.repository.ArtigoRepository;
-import dw.editora.service.ArtigoService;
+import dw.editora.model.artigo.Artigo;
+import dw.editora.repository.artigo.ArtigoRepository;
+import dw.editora.service.artigo.ArtigoService;
 
 @CrossOrigin(origins = "*")
 @RestController

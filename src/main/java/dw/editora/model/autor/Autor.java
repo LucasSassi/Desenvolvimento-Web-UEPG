@@ -1,10 +1,11 @@
-package dw.editora.model;
+package dw.editora.model.autor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import dw.editora.model.artigo.Artigo;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
