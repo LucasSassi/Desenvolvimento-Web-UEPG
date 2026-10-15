@@ -28,8 +28,12 @@ public class Autor {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT", length = 280)
     private String biografia;
+
+    private String nacionalidade;
+
+    private Date dataNascimento;
 
     @OneToMany(mappedBy = "autor")
     @JsonIgnore
@@ -68,6 +72,22 @@ public class Autor {
 
     public void setBiografia(String biografia) {
         this.biografia = biografia;
+    }
+
+    public String getNacionalidade(){
+        return this.nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade){
+        this.nacionalidade = nacionalidade;
+    }
+
+    public Date getDataNascimento(){
+        return this.dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento){
+        this.dataNascimento = dataNascimento;
     }
 
     public List<Artigo> getArtigos() {
